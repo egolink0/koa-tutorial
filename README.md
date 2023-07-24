@@ -1,6 +1,5 @@
 # koa-tutorial
 koa-tutorial
+> 获取某个分支的方式： git checkout <标签>
 
-
-## log
-- 7.24 demo01 改为 tag 方式
+- RESTful api 方式 ： v1.1.0
