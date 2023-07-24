@@ -4,10 +4,12 @@ const bodyParser = require("koa-bodyparser"); // koa-bodyparser
 const app = new Koa();
 
 const indexRoutes = require("../server/routes/index");
+const authRoutes = require("../server/routes/auth");
 const movieRoutes = require("../server/routes/movies");
 
 app.use(bodyParser()); // 在路由之前加入中间件
 app.use(indexRoutes.routes());
+app.use(authRoutes.routes());
 app.use(movieRoutes.routes());
 
 const PORT = 4000;
